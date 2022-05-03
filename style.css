@@ -1,0 +1,233 @@
+body{
+    /* overflow-y: hidden; */
+    font-family: 'Montserrat', sans-serif;
+    /* background: url("/images/background.png"); */
+}
+
+.main{
+    width: 100vw !important;
+    height: 100vh !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    white-space: nowrap;
+}
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+}
+.section-sm{
+    width: 30vw;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+}
+
+.sidebar{
+    height: 100vh; 
+}
+
+/* Stile descrizione Fucino Conto */
+.main-description h1{
+    width: 470px !important;
+    letter-spacing: 1px;
+    font-size: 300%;
+    word-break:keep-all;
+    white-space: normal;
+}
+
+.main-description h4{
+    width: 420px;
+    letter-spacing: normal;
+    word-break:keep-all;
+    white-space: normal;
+}
+
+.main-description li{
+    width: 470px;
+    font-size: 130%;
+}
+
+.p2{
+    color: #003366;
+}
+.p2-description{
+    word-break:keep-all;
+    white-space: normal;
+    letter-spacing: 1px;
+}
+.p2-description .titolo{
+    font-size: 600%;
+}
+
+.p2-btn{
+    border: solid 2px #003366;
+    background-color: transparent;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    color:#003366;
+}
+
+.img_p2 img{
+    border-radius: 50%;
+    width: 330px;
+    height: 330px;
+}
+
+.questions p{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.p4{
+    color: #003366;
+}
+.p4-titolo h1{
+    font-size: 500%;
+    letter-spacing: 1px;
+}
+
+.nome-doc p{
+    margin-bottom: 0px;
+    font-size: 90%;
+    color: #707070;
+}
+.nome-doc a{
+    margin-bottom: 0px;
+    font-size: 90%;
+    color: #003366;
+}
+
+.p5 .titolo{
+    font-size: 350%;
+    color: #00A8ff;
+}
+.p5 h2{
+    font-size: 300%;
+    letter-spacing: 2px;
+}
+.p5 p{
+    font-size: 120%;
+}
+/* Pulsante "Scopri gli step */
+.scopri{
+    background-color: transparent;
+    border-radius: 30px;
+    height: 54px;
+    width: 150px;
+    border: 2px solid black;
+}
+.scopri-sm{
+    background-color: transparent;
+    border-radius: 30px;
+    height: 45px;
+    width: 110px;
+    color: #003366;
+    border: 1px solid #003366;
+}
+.apri-conto{
+    background-color: transparent;
+    border-radius: 30px;
+    height: 60px;
+    width: 150px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: auto;
+}
+.apri-conto2{
+    background-color: #00A8ff;
+    width: 270px;
+    height: 55px;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Modal*/
+/* Borders */
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-footer{
+    border-top: none;
+}
+
+/* Sections styles */
+.light{
+    background-color: #ffffff;
+    color: #003366;
+}
+.blue{
+    background-color: #1741a3;
+    color:#ffffff
+}
+.violet{
+    background-color: #C446A8;
+    color: #ffffff;
+}
+
+.modal-container{
+    height: 750px;
+}
+.modal-container h1{
+    font-size: 500%;
+    letter-spacing: 1px;
+} 
+.modal-container .titolo{
+    width: 500px;
+}
+.img1{
+    width: 900px;
+    height: 500px;
+}
+.img2{
+    width: 500px;
+    height: 400px;
+}
+.img3{
+    width: 900px;
+    height: 500px;
+}
+
+.modal-description-blue{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ffffff;
+    padding: 100px 130px 100px 70px;
+}
+.modal-description-blue p{
+    word-break:keep-all;
+    white-space: normal;
+}
+.modal-description-light{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #003366;
+    padding: 100px 130px 100px 70px;
+}
+.modal-description-light p{
+    word-break:keep-all;
+    white-space: normal;
+}
+
+
+
+
+.rombo{
+    background: url("/images/pagina_select.svg") no-repeat scroll 0 0 transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+  }
