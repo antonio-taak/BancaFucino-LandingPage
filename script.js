@@ -25,7 +25,7 @@ button_down.onclick = function() {
         subtitle.className = "pt2 fs-5";
         subtitle.innerHTML = "TRADING FACILE";
 
-        paragraph.className = "pt2 mt-4";
+        paragraph.className = "pt2";
         paragraph.innerHTML = "Fucino conto ti da la possibilità di accedere e operare in tempo reale h24 sui mercati mondiali";
     }
 }

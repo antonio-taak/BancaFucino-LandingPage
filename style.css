@@ -11,6 +11,10 @@ body{
     margin-left: 0 !important;
 }
 
+.p1-bg{
+    background-image: url(/images/bg-p1.png);
+}
+
 .wrapper{
     width: 100vw;
     height: 100vh;
@@ -34,6 +38,18 @@ body{
     height: 100vh; 
 }
 
+#fb{
+    width: 42px;
+    height: 42px;
+}
+#linkedin{
+    width: 42px;
+    height: 42px;
+}
+#site{
+    width: 42px;
+    height: 42px;
+}
 /* Stile descrizione Fucino Conto */
 .main-description h1{
     width: 470px !important;
@@ -44,7 +60,7 @@ body{
 }
 
 .main-description h4{
-    width: 420px;
+    width: 450px;
     letter-spacing: normal;
     word-break:keep-all;
     white-space: normal;
@@ -55,6 +71,9 @@ body{
     font-size: 130%;
 }
 
+.p2-bg{
+    background-image: url(/images/bg-p2.png);
+}
 .p2{
     color: #003366;
 }
@@ -82,9 +101,13 @@ body{
     height: 330px;
 }
 
-.questions p{
+/* .questions p{
     margin-bottom: 50px;
     text-transform: uppercase;
+} */
+
+.p4-bg{
+    background-image: url(/images/bg-p4.png);
 }
 
 .p4{
@@ -94,7 +117,16 @@ body{
     font-size: 500%;
     letter-spacing: 1px;
 }
+.wrapper-doc{
+    max-height: 120px;
+    overflow-x: auto;
+}
 
+.wrapper-doc .item{
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+}
 .nome-doc p{
     margin-bottom: 0px;
     font-size: 90%;
@@ -106,6 +138,9 @@ body{
     color: #003366;
 }
 
+.p5-bg{
+    background-image: url(/images/bg-p5.png);
+}
 .p5 .titolo{
     font-size: 350%;
     color: #00A8ff;
@@ -113,9 +148,11 @@ body{
 .p5 h2{
     font-size: 300%;
     letter-spacing: 2px;
+    color: #ffffff;
 }
 .p5 p{
     font-size: 120%;
+    color: #ffffff;
 }
 /* Pulsante "Scopri gli step */
 .scopri{
@@ -220,14 +257,3 @@ body{
     white-space: normal;
 }
 
-
-
-
-.rombo{
-    background: url("/images/pagina_select.svg") no-repeat scroll 0 0 transparent;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    height: 40px;
-    width: 40px;
-  }
