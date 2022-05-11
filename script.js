@@ -51,3 +51,66 @@ button_up.onclick = function() {
 
     }
 }
+
+
+var question1 = document.getElementById("question1");
+var question2 = document.getElementById("question2");
+var question3 = document.getElementById("question3");
+var question4 = document.getElementById("question4");
+
+var answers = document.getElementById("answers");
+
+if(question1.className != "acceso" && question2.className != "acceso" && question3.className != "acceso" && question4.className != "acceso"){
+    question1.className = "acceso";
+    question2.className = "spento";
+    question3.className = "spento";
+    question4.className = "spento";
+    answers.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p>"
+}
+question1.onclick = function() {
+    if(question1.className != "acceso"){
+        question1.className = "acceso";
+        question2.className = "spento";
+        question3.className = "spento";
+        question4.className = "spento";
+
+        //Devo cambiare l'html visualizzato nella risposta
+        answers.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p>"
+    }
+}
+
+question2.onclick = function() {
+    if(question2.className != "acceso"){
+        question2.className = "acceso";
+
+        question1.className = "spento";
+        question3.className = "spento";
+        question4.className = "spento";
+        //Devo cambiare l'html visualizzato nella risposta
+        answers.innerHTML = "<h3>Parla con un nostro operatore</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad.</p> <button class='scopri-white mt-4'>Apri una chat</button>";
+    }
+}
+
+question3.onclick = function() {
+    if(question3.className != "acceso"){
+        question3.className = "acceso";
+
+        question1.className = "spento";
+        question2.className = "spento";
+        question4.className = "spento";
+        //Devo cambiare l'html visualizzato nella risposta
+        answers.innerHTML = "<h3>Chiamaci per parlare direttamente con un nostro operatore</h3> <ul> <li>Informazioni: 800 955 540</li> <li>Informazioni: 800 955 540</li> </ul>";
+    }
+}
+
+question4.onclick = function() {
+    if(question4.className != "acceso"){
+        question4.className = "acceso";
+
+        question1.className = "spento";
+        question2.className = "spento";
+        question3.className = "spento";
+        //Devo cambiare l'html visualizzato nella risposta
+        answers.innerHTML = "";
+    }
+}
