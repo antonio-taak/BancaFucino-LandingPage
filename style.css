@@ -73,6 +73,9 @@ body{
     font-size: 130%;
     color: #ffffff;
 }
+.main-description p{
+    color: #ffffff;
+}
 
 .p2-bg{
     background-image: url(/images/bg-p2.png);
@@ -80,6 +83,18 @@ body{
 .p2{
     color: #003366;
 }
+
+.p2-fade{
+    transition: opacity 1000ms ease-in;
+    /* opacity: 0; */
+}
+.p2-fade .fade-out{
+    transform: translateY(-50px);
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+
 .p2-description{
     word-break:keep-all;
     white-space: normal;
@@ -104,17 +119,35 @@ body{
     height: 330px;
 }
 
+#p2-partnum{
+    width: 35px !important;
+    height: 115px !important;
+}
+#p2-title{
+    width: 225px !important;
+    height: 115px !important;
+}
 .p3-bg{
     background-image: url(/images/bg-p1.png);
+}
+#questions{
+    width: 480px !important;
+    height: 420px !important;
+}
+#questions a{
+    text-decoration: none;
+}
+#answers{
+    width: 480px !important;
+    height: 420px !important;
 }
 .container-titolo{
     color: #ffffff;
 }
-.questions a{
-    text-decoration: none;
-}
+
 .acceso{
     color: #ffffff;
+    text-decoration: underline !important;
 }
 .acceso:hover{
     color: #ffffff;
@@ -130,10 +163,51 @@ body{
 #answers{
     color: #ffffff;
 }
-/* .questions p{
-    margin-bottom: 50px;
-    text-transform: uppercase;
-} */
+
+#answers label{
+    font-size: 90%;
+}
+#answers .form-control{
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#answers .form-control:hover{
+    transition: all 0.2s;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+#answers .form-control:focus{
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.form-check-input{
+    border: 2px solid #ffffff !important;
+    background-color: transparent;
+}
+.form-check-label{
+    text-decoration: underline;
+}
+.submit{
+    background-color: transparent;
+    border-radius: 37px;
+    height: 48px;
+    width: 112px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
 
 .p4-bg{
     background-image: url(/images/bg-p4.png);
@@ -200,19 +274,23 @@ body{
 /* Pulsante "Scopri gli step */
 .scopri-white{
     background-color: transparent;
-    border-radius: 30px;
-    height: 54px;
-    width: 150px;
+    border-radius: 37px;
+    height: 74px;
+    width: 200px;
     border: 2px solid #ffffff;
     color: #ffffff;
+    font-size: 18px;
+    text-align: center;
 }
 .scopri-blue{
     background-color: transparent;
-    border-radius: 30px;
-    height: 54px;
-    width: 150px;
+    border-radius: 37px;
+    height: 74px;
+    width: 200px;
     border: 2px solid #003366;
     color: #003366;
+    font-size: 18px;
+    text-align: center;
 }
 .scopri-sm{
     background-color: transparent;
