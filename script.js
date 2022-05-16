@@ -2,6 +2,8 @@ var partnum = document.getElementById("p2-partnum");
 var title = document.getElementById("p2-title");
 var subtitle = document.getElementById("p2-subtitle");
 var paragraph = document.getElementById("p2-paragraph");
+var image = document.getElementById("p2-img");
+var image_div = document.getElementById("p2-img-div");
 
 var button_down = document.getElementById("p2-down");
 var button_up = document.getElementById("p2-up");
@@ -26,6 +28,9 @@ button_down.onclick = function() {
             paragraph.className = "pt2";
             paragraph.innerHTML = "Un design moderno, funzionalità innovative e una navigazione intuitiva e veloce disponibile tramite Computer e App";
 
+            image.src="images/img_p2-2.png";
+            image.className = "p2-img-fade-in";
+
             button_up.innerHTML = "<img src='/images/slider-up-blue.svg' class='mb-3'> "
         },700);
 
@@ -34,6 +39,7 @@ button_down.onclick = function() {
         title.className = "col-sm-5 ms-5 fade-out";
         subtitle.className = "fs-5 fade-out";
         paragraph.className = "fade-out";
+        image.className = "p2-img-fade-out";
 
     }else if(title.className == "pt2 ms-5 pt-4"){
         //  SE NELLA PARTE 2 
@@ -212,14 +218,18 @@ button_up.onclick = function() {
              paragraph.className = "pt1";
              paragraph.innerHTML = "Con conto [nome] gestire i tuoi risparmi e sempre più facile e veloce";
 
+             image.src = "images/img_p2.png";
+             image.className = "p2-img-fade-in";
+
              button_up.innerHTML = "<img src='/images/slider-up.svg' class='mb-3'> "
          },700);
 
         //ANIMAZIONE FADE
         partnum.className = "p2 titolo col-sm-2 me-5 fade-out";
         title.className = "p2 col-sm-5 ms-5 fade-out";
-         subtitle.className = "p2 fs-5 fade-out";
-         paragraph.className = "p2 fade-out";
+        subtitle.className = "p2 fs-5 fade-out";
+        paragraph.className = "p2 fade-out";
+        image.className = "p2-img-fade-out"
     }
 
 }
