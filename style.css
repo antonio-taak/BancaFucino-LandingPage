@@ -18,7 +18,7 @@ body{
 }
 
 .p1-bg{
-    background-image: url(/images/bg-p1.png);
+    background-image: url(images/bg-p1.png);
 }
 
 .wrapper{
@@ -43,7 +43,7 @@ body{
 }
 
 .sidebar{
-    height: 100vh; 
+    height: 100vh;
 }
 
 #fb{
@@ -86,7 +86,7 @@ body{
 }
 
 .p2-bg{
-    background-image: url(/images/bg-p2.png);
+    background-image: url(images/bg-p2.png);
 }
 .p2{
     color: #003366;
@@ -158,7 +158,7 @@ body{
     height: 115px !important;
 }
 .p3-bg{
-    background-image: url(/images/bg-p1.png);
+    background-image: url(images/bg-p1.png);
 }
 #questions{
     width: 480px !important;
@@ -240,7 +240,7 @@ body{
 
 
 .p4-bg{
-    background-image: url(/images/bg-p4.png);
+    background-image: url(images/bg-p4.png);
 }
 
 .p4{
@@ -257,22 +257,22 @@ body{
     display: flex;
     overflow-x: auto;
   }
-  
+
   .wrapper-doc .item{
     min-width: 280px;
     height: 100px;
     text-align: center;
   }
-  
+
   .item img{
     height: 64px;
     width: 64px;
   }
-  
+
   .nome-doc{
     text-align: left;
   }
-  
+
   .nome-doc p{
     margin-bottom: 0px;
     font-size: 90%;
@@ -286,7 +286,7 @@ body{
 
 
 .p5-bg{
-    background-image: url(/images/bg-p5.png);
+    background-image: url(images/bg-p5.png);
 }
 .p5 .titolo{
     font-size: 350%;
@@ -385,7 +385,7 @@ body{
 .modal-container h1{
     font-size: 500%;
     letter-spacing: 1px;
-} 
+}
 .modal-container .titolo{
     width: 500px;
 }
@@ -423,4 +423,3 @@ body{
     word-break:keep-all;
     white-space: normal;
 }
-
