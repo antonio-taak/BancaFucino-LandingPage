@@ -32,9 +32,6 @@ button_down.onclick = function() {
             image.className = "p2-img-fade-in";
 
             button_up.innerHTML = "<img src='/images/slider-up-blue.svg' class='mb-3'> "
-
-            button_up.innerHTML = "<img src='images/slider-up-blue.svg' class='mb-3'> "
-
         },700);
 
         //ANIMAZIONE FADE
@@ -45,7 +42,7 @@ button_down.onclick = function() {
         image.className = "p2-img-fade-out";
 
     }else if(title.className == "pt2 ms-5 pt-4"){
-        //  SE NELLA PARTE 2
+        //  SE NELLA PARTE 2 
         //  VADO ALLA PARTE 3
         setTimeout(()=>{
             partnum.className = "pt3 titolo me-5";
@@ -110,7 +107,7 @@ button_down.onclick = function() {
             paragraph.className = "pt5";
             paragraph.innerHTML = "Con il PFM hai a disposizione un Personal Trainer Finanziario che ti aiuta con consigli mirati per la gestione delle tue entrare ed uscite";
 
-            button_down.innerHTML = "<img src='images/slider-down.svg' class='mb-3'> "
+            button_down.innerHTML = "<img src='/images/slider-down.svg' class='mb-3'> "
         },700);
 
         //ANIMAZIONE FADE
@@ -120,7 +117,7 @@ button_down.onclick = function() {
         paragraph.className = "fade-out";
 
     }else{
-
+        
     }
 }
 
@@ -146,7 +143,7 @@ button_up.onclick = function() {
             paragraph.className = "pt4";
             paragraph.innerHTML = "Ad ogni movimento sul tuo conto riceverai un SMS sul tuo cellulare. La tua sicurezza ci sta a cuore!";
 
-            button_down.innerHTML = "<img src='images/slider-down-blue.svg' class='mb-3'> "
+            button_down.innerHTML = "<img src='/images/slider-down-blue.svg' class='mb-3'> "
         },700);
 
         //ANIMAZIONE FADE
@@ -196,7 +193,7 @@ button_up.onclick = function() {
             paragraph.className = "pt2";
             paragraph.innerHTML = "Un design moderno, funzionalità innovative e una navigazione intuitiva e veloce disponibile tramite Computer e App";
 
-            button_up.innerHTML = "<img src='images/slider-up-blue.svg' class='mb-3'> "
+            button_up.innerHTML = "<img src='/images/slider-up-blue.svg' class='mb-3'> "
         },700);
 
         //ANIMAZIONE FADE
@@ -225,9 +222,6 @@ button_up.onclick = function() {
              image.className = "p2-img-fade-in";
 
              button_up.innerHTML = "<img src='/images/slider-up.svg' class='mb-3'> "
-
-             button_up.innerHTML = "<img src='images/slider-up.svg' class='mb-3'> "
-
          },700);
 
         //ANIMAZIONE FADE
