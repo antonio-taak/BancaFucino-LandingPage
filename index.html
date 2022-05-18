@@ -185,7 +185,7 @@
               <div class="p2-description d-flex flex-row ms-5">
                 <h1 class="titolo col-sm-1 me-3">0</h1>
                 <h1 id="p2-partnum" class="titolo me-5">1</h1>
-                <h3 id="p2-title" class="pt1 ms-5 pt-4">Conto Corrente</h3>
+                <h3 id="p2-title" class="pt1 ms-5 pt-4 fade-in">Conto Corrente</h3>
               </div>
               
               <div class="p2-scroll d-flex flex-row mt-5 ms-5">
@@ -557,140 +557,207 @@
           <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body ">
-            <div class="wrapper">
+          <div class="modal-body">
 
-              <!-- SECTION 1  -->
-              <div class="section-sm light">
-                <div class="modal-container d-flex flex-row bd-highlight align-items-center">
-                  <div class="titolo ms-5 ps-5">
-                  <h1>Esplora</h1>
-                  <h1>gli step</h1>
+            <div class="row modal-row">
+
+              <!-- SECTION SM 1 -->
+              <div id="sec-sm-1" class="col-piccola align-items-center">
+                <div class="row h-100">
+
+                  <div class="col-md-6 offset-md-3 d-flex align-items-center justify-content-center h-100">
+                    <h1 style="font-size: 300%;">Scopri tutti i passaggi in pochi click</h1>
                   </div>
+
+                </div>
+              </div>
+
+              <!-- SECTION 1 -->
+              <div id="sec-1" class="col-grande">
+                <div class="row h-100">
+
+                  <div class="col-md-1 d-flex align-items-center justify-content-center">
+                    <!-- SCOPRI -->
+                    <button class="scopri-sm">Scopri ></button>
+                  </div>
+
+                  <div class="col-md-5 offset-md-1 d-flex flex-column align-items-center justify-content-center">
+                    <!-- FOTO -->
+                    <img class="img1" src="/images/img1.png">
+                  </div>
+
+                  <div class="col-md-4 offset-md-1 d-flex flex-column align-items-center justify-content-center">
+                    <!-- TESTO -->
+                    <div class="modal-description-light">
+                      <p class="ls-6">STEP 1</p>
+                      <p class="fw-bold fs-4 mb-0">Inserisci i tuoi dati</p>
+                      <p>Dovrai fornire nome, cognome, e-mail, codice fiscale e n. di cellulare</p>
+                    </div>
+                    <div class="scorrimento-blue d-flex mt-5 me-5 pe-3">
+                      <p>Scorri</p>
+                      <a href="#sec-2"> <img src="/images/freccia-dx.svg"> </a>
+                    </div> 
+                  </div>
+
                 </div>
               </div>
 
               <!-- SECTION 2 -->
-              <div class="section light">
-                <div class="modal-container d-flex flex-column align-items-center">
+              <div id="sec-2" class="col-grande">
+                <div class="row h-100">
 
-                  <div class="d-flex align-items-center">
-                    <div class="col-sm-1 me-5">
-                      <button class="scopri-sm">Scopri ></button>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <img class="img1" src="/images/img1.png">
-                    </div>
-                    
-                    <div class="col-sm-5 offset-sm-1 me-5">
-                      <div class="modal-description-light">
-                        <p class="ls-6">STEP 1</p>
-                        <p class="fw-bold fs-4 mb-0">Vai sul sito</p>
-                        <p class="fw-bold fs-4">e registra i tuoi dati</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corrupti vel nulla sapiente facilis temporibus. Sunt iusto, saepe voluptates quam dolores atque quia error blanditiis, ullam porro ut beatae! Unde.</p>
-                      </div>
-                    </div>
-                    
+                  <div class="col-md-5 offset-md-1 d-flex align-items-center justify-content-center1">
+                    <!-- FOTO -->
+                    <img class="img2" src="/images/img1.png">
                   </div>
 
-                    <div class="scorrimento-blue d-flex flex-row mt-5 pt-5 ms-5 ps-5">
-                      <!-- <a href=""> <img src="/images/freccia-sx.svg"> </a> -->
-                      <p>Scorri</p>
-                      <a href="#section2"> <img src="/images/freccia-dx.svg"> </a>
+                  <div class="col-md-5 offset-md-1 d-flex flex-column align-items-center justify-content-center">
+                    <!-- TESTO -->
+                    <div class="modal-description-blue">
+                      <p class="ls-6">STEP 2</p>
+                      <p class="fw-bold fs-4 mb-0">Certifica i tuoi contatti</p>
+                      <p>Riceverai via sms e via e-mail dei codici da inserire per convalidare i tuoi dati</p>
                     </div>
-                
+                    <div class="scorrimento d-flex mt-5">
+                      <a href="#sec-1"> <img src="/images/freccia-sx-white.svg"> </a>
+                      <p>Scorri</p>
+                      <a href="#sec-3"> <img src="/images/freccia-dx-white.svg"> </a>
+                    </div> 
+                  </div>
+
                 </div>
               </div>
 
               <!-- SECTION 3 -->
-              <div class="section blue">
-                <div class="modal-container d-flex flex-column align-items-center">
+              <div id="sec-3" class="col-grande">
+                <div class="row h-100">
 
-                <div class="d-flex align-items-center vw-100">
-                  <div class="col-sm-4 offset-sm-1">
+                  <div class="col-md-5 offset-md-1 d-flex align-items-center justify-content-center">
+                    <!-- FOTO -->
                     <img class="img2" src="/images/img1.png">
                   </div>
-                  
-                  <div class="col-sm-6 offset-sm-1">
-                    <div class="modal-description-blue">
-                      <p class="ls-6">STEP 2</p>
-                      <p class="fw-bold fs-4 mb-0">Vai sul sito</p>
-                      <p class="fw-bold fs-4">e registra i tuoi dati</p>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corrupti vel nulla sapiente facilis temporibus. Sunt iusto, saepe voluptates quam dolores atque quia error blanditiis, ullam porro ut beatae! Unde.</p>
-                    </div>
-                  </div>
-                  
-                </div>
 
-                <div class="scorrimento d-flex flex-row mt-5 pt-5 ms-5 ps-5">
-                  <a href=""> <img src="/images/freccia-sx-white.svg"> </a> 
-                  <p>Scorri</p>
-                  <a href="#section2"> <img src="/images/freccia-dx-white.svg"> </a>
-                </div>
+                  <div class="col-md-5 offset-md-1 d-flex flex-column align-items-center justify-content-center">
+                    <!-- TESTO -->
+                    <div class="modal-description-light">
+                      <p class="ls-6">STEP 3</p>
+                      <p class="fw-bold fs-4 mb-0">Carica i tuoi documenti</p>
+                      <p>Effettua l'upload di un documento d'identità o della tessera sanitaria</p>
+                    </div>
+                    <div class="scorrimento-blue d-flex mt-5">
+                      <a href="#sec-2"> <img src="/images/freccia-sx.svg"> </a>
+                      <p>Scorri</p>
+                      <a href="#sec-4"> <img src="/images/freccia-dx.svg"> </a>
+                    </div> 
+                  </div>
 
                 </div>
               </div>
 
               <!-- SECTION 4 -->
-              <div class="section light">
-                <div class="modal-container d-flex flex-column align-items-center">
+              <div id="sec-4" class="col-grande">
+                <div class="row h-100">
 
-                <div class="d-flex align-items-center">
-                 <div class="col-sm-6">
-                  <img class="img3" src="/images/img1.png">
-                 </div>
-                  
-                 <div class="col-sm-4 offset-sm-2">
-                  <div class="modal-description-light">
-                    <p class="ls-6">STEP 3</p>
-                    <p class="fw-bold fs-4 mb-0">Vai sul sito</p>
-                    <p class="fw-bold fs-4">e registra i tuoi dati</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corrupti vel nulla sapiente facilis temporibus. Sunt iusto, saepe voluptates quam dolores atque quia error blanditiis, ullam porro ut beatae! Unde.</p>
+                  <div class="col-md-5 offset-md-1 d-flex align-items-center justify-content-center">
+                    <!-- FOTO -->
+                    <img class="img2" src="/images/img1.png">
                   </div>
-                 </div>
-                 
-                </div>
-                
-                <div class="scorrimento-blue d-flex flex-row mt-5 pt-5 ms-5 ps-5">
-                  <a href=""> <img src="/images/freccia-sx.svg"> </a> 
-                  <p>Scorri</p>
-                  <a href="#section2"> <img src="/images/freccia-dx.svg"> </a>
-                </div>
+
+                  <div class="col-md-5 offset-md-1 d-flex flex-column align-items-center justify-content-center">
+                    <!-- TESTO -->
+                    <div class="modal-description-blue">
+                      <p class="ls-6">STEP 4</p>
+                      <p class="fw-bold fs-4 mb-0">Firma il contratto</p>
+                      <p>Crea la tua firma digitale e inseriscila all'interno del contratto</p>
+                    </div>
+                    <div class="scorrimento d-flex mt-5">
+                      <a href="#sec-3"> <img src="/images/freccia-sx-white.svg"> </a>
+                      <p>Scorri</p>
+                      <a href="#sec-5"> <img src="/images/freccia-dx-white.svg"> </a>
+                    </div> 
+                  </div>
 
                 </div>
               </div>
 
               <!-- SECTION 5 -->
-              <div class="section-sm violet">
-                <div class="modal-container d-flex flex-column align-items-center">
+              <div id="sec-5" class="col-grande">
+                <div class="row h-100">
 
-                <div class="d-flex align-items-center">
-                  <div class="titolo ms-5 ps-5">
-                    <p class="ls-6">CHE ASPETTI?</p>
-                    <h1>Apri il</h1>
-                    <h1>tuo conto</h1>
-                    <button class="apri-conto mt-5">Apri conto</button>
+                  <div class="col-md-5 offset-md-1 d-flex align-items-center justify-content-center">
+                    <!-- FOTO -->
+                    <img class="img2" src="/images/img1.png">
                   </div>
-                </div>
 
-                <div class="scorrimento-blue d-flex flex-row mt-5 pt-5 ms-5 ps-5">
-                  <a href=""> <img src="/images/freccia-sx.svg"> </a> 
-                  <p>Scorri</p>
-                  <a href="#section2"> <img src="/images/freccia-dx.svg"> </a>
-                </div>
+                  <div class="col-md-5 offset-md-1 d-flex flex-column align-items-center justify-content-center">
+                    <!-- TESTO -->
+                    <div class="modal-description-light">
+                      <p class="ls-6">STEP 5</p>
+                      <p class="fw-bold fs-4 mb-0">Mettici la faccia!</p>
+                      <p>Effettua il riconoscimento tramite videoselfie</p>
+                    </div>
+                    <div class="scorrimento-blue d-flex mt-5">
+                      <a href="#sec-4"> <img src="/images/freccia-sx.svg"> </a>
+                      <p>Scorri</p>
+                      <a href="#sec-6"> <img src="/images/freccia-dx.svg"> </a>
+                    </div> 
+                  </div>
+
                 </div>
               </div>
 
+              <!-- SECTION 6 -->
+              <div id="sec-6" class="col-grande">
+                <div class="row h-100">
+
+                  <div class="col-md-5 offset-md-1 d-flex align-items-center justify-content-center">
+                    <!-- FOTO -->
+                    <img class="img2" src="/images/img1.png">
+                  </div>
+
+                  <div class="col-md-5 offset-md-1 d-flex flex-column align-items-center justify-content-center">
+                    <!-- TESTO -->
+                    <div class="modal-description-blue">
+                      <p class="ls-6">STEP 6</p>
+                      <p class="fw-bold fs-4 mb-0">Giusto il tempo di controllare!</p>
+                      <p>I nostri operatori offettueranno delle verifiche e riceverai una conferma ad eventuale apertura conto</p>
+                    </div>
+                    <div class="scorrimento d-flex mt-5">
+                      <a href="#sec-5"> <img src="/images/freccia-sx-white.svg"> </a>
+                      <p>Scorri</p>
+                      <a href="#sec-sm-2"> <img src="/images/freccia-dx-white.svg"> </a>
+                    </div> 
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- SECTION SM 2 -->
+              <div id="sec-sm-2" class="col-piccola">
+                <div class="row h-100">
+
+                  <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center justify-content-center h-100">
+                    <div class="titolo">
+                      <p class="ls-5">CHE ASPETTI?</p>
+                      <h1 style="font-size: 510%;">Apri il tuo conto</h1>
+                      <button class="apri-conto mt-5">Apri conto</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+          
+              </div>
+
             </div>
+              
+            </div>
+            
           </div>
           
         </div>
       </div>
     </div>
-
-
-
 
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
