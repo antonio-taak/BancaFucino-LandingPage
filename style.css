@@ -44,6 +44,8 @@ body{
 
 .sidebar{
     height: 100vh; 
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 
 #fb{
@@ -61,15 +63,17 @@ body{
 /* Stile descrizione Fucino Conto */
 .main-description h1{
     width: 470px !important;
-    letter-spacing: 1px;
-    font-size: 300%;
+    letter-spacing: 0px;
+    font-size: 72px;
     word-break:keep-all;
     white-space: normal;
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-description h4{
-    width: 450px;
+    width: 550px;
+    font-size: 28px;
     letter-spacing: normal;
     word-break:keep-all;
     white-space: normal;
@@ -83,6 +87,19 @@ body{
 }
 .main-description p{
     color: #ffffff;
+}
+#point-1{
+    margin-left: -800px;
+    margin-top: 20px;
+}
+#point-2{
+    margin-left: 250px;
+}
+#point-3{
+    margin-left: 250px;
+}
+#point-4{
+    margin-left: 250px;
 }
 
 .p2-bg{
@@ -188,18 +205,66 @@ body{
 #questions{
     width: 480px !important;
     height: 420px !important;
+    border-right: 1px solid #ffffff;
 }
 #questions a{
     text-decoration: none;
+    width: 250px;
 }
 #answers{
     width: 480px !important;
     height: 420px !important;
 }
+#answers p{
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+}
+.accordion-item{
+    background-color: transparent !important;
+    border: none;
+}
+.accordion-item h2 button{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.accordion-item h2 button .accordion-arrow{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+.accordion-button{
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+#collapseOne::after{
+    box-sizing: 0px;
+}
+#collapseOne::before{
+    box-sizing: 0px;
+}
 .container-titolo{
     color: #ffffff;
 }
-
+.container-titolo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+}
+.container-titolo h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
 .acceso{
     color: #ffffff;
     text-decoration: underline !important;
@@ -209,11 +274,11 @@ body{
 }
 
 .spento{
-    color: #707070;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .spento:hover{
-    color: #707070;
+    color: #ffffff;
 }
 #answers{
     color: #ffffff;
@@ -272,10 +337,15 @@ body{
     color: #003366;
 }
 .p4-titolo h1{
-    font-size: 500%;
-    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
 }
-
+.riga1 h3{
+    font-size: 21px;
+}
+.riga2 h3{
+    font-size: 21px;
+}
 
 .wrapper-doc{
     max-height: 120px;
