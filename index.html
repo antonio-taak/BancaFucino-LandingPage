@@ -14,9 +14,9 @@
   </head>
   <body>
     <div class="scroll">
-    <div class="container-fluid main p1-bg">
-      <div class="wrapper">
-        <div class="section">
+    <div class="container-fluid main">
+      <div class="row">
+        <div class="p1-bg">
           <div class="row">
               <!-- Left Sidebar -->
               <div class="col-sm-1 d-flex text-center sidebar align-items-end justify-content-center">
@@ -27,7 +27,8 @@
                     </nav>
               </div>
 
-              <!-- Main content -->
+                
+              <!-- Main content 1-->
               <div class="col-sm-10">
                 <a name="pagina1"></a>
                   <div class="container-fluid mt-5">
@@ -41,7 +42,8 @@
                       </nav>
                         
                         <!-- Descrizione principale -->
-                        <div class="main-description mt-5">
+                        <!-- CAMBIO QUESTO CONTENT -->
+                        <div id="p1-content" class="main-description mt-5">
                             <h1>Tanti servizi</h1>
                             <h1>a Zero spese!</h1>
 
@@ -59,24 +61,25 @@
                       </div>
                 </div>
 
-                <div class="row align-items-center mt-5 pt-5">
+                <div class="row align-items-center">
                   <div class="col-md-3">
                       <button class="scopri-white" data-bs-toggle="modal" data-bs-target="#modal">Apri il tuo conto</button>
                   </div>
-                  <div class="col-md-7">
+                  <!-- CAMBIO QUESTA BARRA -->
+                  <div id="p1-bar" class="col-md-7">
                     <div class="d-flex">
                       <img src="images/p1-num1.svg">
                       <img src="images/p1-slider.svg">
-                      <a id="point-1" href="#pagina2"> <img src="images/p1-point.svg"> </a>
-                      <img id="point-2" src="images/p1-point.svg">
-                      <img id="point-3" src="images/p1-point.svg">
-                      <img id="point-4" src="images/p1-point.svg">
+                      <a id="point-1" class="a-point"> <img src="images/p1-point.svg"> </a>
+                      <a id="point-2" class="a-point"> <img src="images/p1-point.svg"> </a>
+                      <a id="point-3" class="a-point"> <img src="images/p1-point.svg"> </a>
+                      <a id="point-4" class="a-point"> <img src="images/p1-point.svg"> </a>
                     </div>
                     
                   </div>
-               </div>
+              </div>
 
-               <div class="scorrimento d-flex flex-row justify-content-end mt-5">
+              <div class="scorrimento d-flex flex-row justify-content-end mt-5">
                 <a href=""> <img src="/images/freccia-sx-white.svg"> </a>
                 <p>Scorri</p>
                 <a href="#section2"> <img src="/images/freccia-dx-white.svg"> </a>
@@ -97,68 +100,7 @@
             </div>
           </div> 
           <!-- End Section 1 -->
-
-
-          <!-- Start Section 2 -->
-          <div class="section p1-bg">
-            <div class="row">
-              <!-- Left Sidebar -->
-              <div class="col-sm-1 d-flex text-center sidebar align-items-end justify-content-center">
-                <nav class="nav flex-column mb-5">
-                  <a href="https://facebook.com"> <img id="fb" src="/images/facebook-white.svg" href="facebook.com" class="mb-4"> </a>
-                  <a href="https://linkedin.com"> <img id="linkedin" src="/images/linkedin-white.svg" class="mb-4"> </a>
-                  <a href="#"> <img id="site" src="/images/globe-white.svg" class="mb-5"> </a>
-                </nav>
-              </div>
-
-              <!-- Main content -->
-              <div class="col-sm-10">
-                  <div class="container-fluid mt-5">
-                    <!-- Navbar logo -->
-                      <nav class="navbar navbar-light">
-                          <div class="container-fluid">
-                            <a class="navbar-brand" href="#">
-                              <img src="/images/logo-white.svg" alt="" class="d-inline-block align-text-top">
-                            </a>
-                          </div>
-                      </nav>
-                        <!-- Descrizione principale -->
-                        <div class="main-description mt-5">
-                            <h1>Fucino Conto</h1>
-                            <h1>è molto più di un conto online</h1>
-
-                            <h4 class="mt-5 fw-bold">Hai tutti i servizi di una Banca digitale</h4>
-                            <h4 class="fw-bold">E fai tutto in totale autonomia</h4>
-                        
-                        <ul>
-                          <li>Con FucinoConto il primo anno il canone di tenuta conto è gratis</li>
-                          <li>Dal secondo anno il canone di tenuta è di 3,75 euro al mese</li>
-                          <li>Se sei under 30 il canone è ZERO fino al compimento dei 30 anni!</li>
-                          <li>Entri online e fai tutto in totale autonomia</li>
-                      </ul>
-                      </div>
-
-                      <div class="row mt-5 pt-5">
-                          <div class="col-sm-3">
-                              <button class="scopri-white" data-bs-toggle="modal" data-bs-target="#modal">Scopri gli step</button>
-                          </div>
-                      </div>
-                </div>
-              </div>
-
-              <!-- Right Sidebar -->
-              <div class="col-sm-1 d-flex text-center sidebar align-items-center justify-content-center">
-                <nav class="nav flex-column">
-                  <a class="mb-3 mt-3" href=""> <img src="/images/pagina_select-white.svg"></a>
-                  <a class="mb-3" href=""> <img src="/images/pagina_unselect-white.svg"></a>
-                  <a class="mb-3" href=""> <img src="/images/pagina_unselect-white.svg"></a>
-                  <a class="mb-3" href=""> <img src="/images/pagina_unselect-white.svg"></a>
-                  <a class="mb-3" href=""> <img src="/images/pagina_unselect-white.svg"></a>
-                </nav>
-              </div>      
-            </div>
-          </div>
-          <!-- End Section 2 -->
+          
         </div>  <!-- Fine wrapper -->
       </div>  <!-- Fine container-fluid -->
 
@@ -379,7 +321,7 @@
               </div>
 
               <div class="col-sm-4 offset-sm-3 vw-100 mb-5 pb-5">
-                <button class="scopri-white" data-bs-toggle="modal" data-bs-target="#modal">Scopri gli step</button>
+                <button class="scopri-white" data-bs-toggle="modal" data-bs-target="#modal">Apri il tuo conto</button>
             </div>
 
             </div>

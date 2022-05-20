@@ -335,3 +335,42 @@ question3.onclick = function() {
         answers.innerHTML = "<form> <div class='mb-3 col-auto'> <label for='name' class='form-label'>Nome e Cognome</label> <input type='text' class='form-control' id='name'> </div> <div class='mb-3 col-auto'> <label for='email' class='form-label'>Email</label> <input type='email' class='form-control' id='email' aria-describedby='emailHelp'></div><div class='mb-3 col-auto'><label for='message' class='form-label'>Messaggio</label><textarea type='text' class='form-control' id='message' rows='5'></textarea></div><div class='mb-3 form-check col-auto'><input type='checkbox' class='form-check-input' id='exampleCheck1'><label class='form-check-label' for='check'>Confermo la presa visione dell'Informativa fornita ai sensi degli articoli 13 e 14 del Regolamento UE 2016/679</label></div><div class='d-flex justify-content-end'><button type='submit' class='submit mt-3'>Invia</button></div></form>"
     }
 }
+
+
+
+
+//  ---------- PAGE 1 SLIDER SECTION ----------
+
+var point1 = document.getElementById("point-1");
+var point2 = document.getElementById("point-2");
+var point3 = document.getElementById("point-3");
+var point4 = document.getElementById("point-4");
+
+var content = document.getElementById("p1-content");
+var bar = document.getElementById("p1-bar");
+
+
+point1.onclick = function() {
+    content.innerHTML = "<h1>Apri il tuo conto</h1> <h1>in 5 minuti!</h1><h4 class='mt-5'>In pochi step intuitivi e di facile navigazione. Alla fine mettici la faccia con un bel videoselfie!</h4>";
+
+    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><img id='point-1' src='images/p1-num2.svg'><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+}
+
+point2.onclick = function(){
+    content.innerHTML = "<h1>Adatto a</h1><h1>tutte le età</h1><h4 class='mt-5'>Un conto perfetto per ogni esigenza</h4>";
+
+    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-2' src='images/p1-num3.svg'><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+
+}
+
+point3.onclick = function(){
+    content.innerHTML = "<h1>Funzionalità</h1><h1>innovative e</h1><h1>multidevice</h1><h4 class='mt-5'>Gestisci tutte le operazioni dal Computer, dal Tablet e dallo Smartphone</h4>";
+
+    bar.innerHTML = "<div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-3' src='images/p1-num4.svg'><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+}
+
+point4.onclick = function(){
+    content.innerHTML = "<h1>L'unione tra</h1> <h1>la Tradizione</h1><h1>ed il Digitale</h1><h4 class='mt-5'>Siamo una Banca che ascolta il territorio con uno sguardo verso il Futuro!</h4>";
+
+    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-4' src='images/p1-num5.svg'></div>";
+}
