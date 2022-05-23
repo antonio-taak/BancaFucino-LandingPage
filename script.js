@@ -350,27 +350,59 @@ var content = document.getElementById("p1-content");
 var bar = document.getElementById("p1-bar");
 
 
-point1.onclick = function() {
+function point1_click(){
     content.innerHTML = "<h1>Apri il tuo conto</h1> <h1>in 5 minuti!</h1><h4 class='mt-5'>In pochi step intuitivi e di facile navigazione. Alla fine mettici la faccia con un bel videoselfie!</h4>";
 
-    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><img id='point-1' src='images/p1-num2.svg'><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><img id='point-1' src='images/p1-num2.svg'><a id='point-2' class='a-point' href='#' onclick='point2_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point' href='#' onclick='point3_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point' href='#' onclick='point4_click(); return false;'> <img src='images/p1-point.svg'> </a></div>";
 }
 
-point2.onclick = function(){
+function point2_click(){
     content.innerHTML = "<h1>Adatto a</h1><h1>tutte le età</h1><h4 class='mt-5'>Un conto perfetto per ogni esigenza</h4>";
 
-    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-2' src='images/p1-num3.svg'><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point' href='#' onclick='point1_click(); return false;'> <img src='images/p1-point.svg'> </a><img id='point-2' src='images/p1-num3.svg'><a id='point-3' class='a-point' href='#' onclick='point3_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point' href='#' onclick='point4_click(); return false;'> <img src='images/p1-point.svg'> </a></div>";
 
 }
 
-point3.onclick = function(){
+function point3_click(){
     content.innerHTML = "<h1>Funzionalità</h1><h1>innovative e</h1><h1>multidevice</h1><h4 class='mt-5'>Gestisci tutte le operazioni dal Computer, dal Tablet e dallo Smartphone</h4>";
 
-    bar.innerHTML = "<div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-3' src='images/p1-num4.svg'><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+    bar.innerHTML = "<div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point' href='#' onclick='point1_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point' href='#' onclick='point2_click(); return false;'> <img src='images/p1-point.svg'> </a><img id='point-3' src='images/p1-num4.svg'><a id='point-4-1' class='a-point' href='#' onclick='point4_click(); return false;'> <img src='images/p1-point.svg'> </a></div>";
 }
 
-point4.onclick = function(){
+function point4_click(){
     content.innerHTML = "<h1>L'unione tra</h1> <h1>la Tradizione</h1><h1>ed il Digitale</h1><h4 class='mt-5'>Siamo una Banca che ascolta il territorio con uno sguardo verso il Futuro!</h4>";
 
-    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-4' src='images/p1-num5.svg'></div>";
+    bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point' href='#' onclick='point1_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point' href='#' onclick='point2_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point' href='#' onclick='point3_click(); return false;'> <img src='images/p1-point.svg'> </a><img id='point-4' src='images/p1-num5.svg'></div>";
 }
+
+
+
+
+
+
+
+
+    // point1.onclick = function() {
+    //     content.innerHTML = "<h1>Apri il tuo conto</h1> <h1>in 5 minuti!</h1><h4 class='mt-5'>In pochi step intuitivi e di facile navigazione. Alla fine mettici la faccia con un bel videoselfie!</h4>";
+
+    //     bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><img id='point-1' src='images/p1-num2.svg'><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+    // }
+
+    // point2.onclick = function(){
+    //     content.innerHTML = "<h1>Adatto a</h1><h1>tutte le età</h1><h4 class='mt-5'>Un conto perfetto per ogni esigenza</h4>";
+
+    //     bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-2' src='images/p1-num3.svg'><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+
+    // }
+
+    // point3.onclick = function(){
+    //     content.innerHTML = "<h1>Funzionalità</h1><h1>innovative e</h1><h1>multidevice</h1><h4 class='mt-5'>Gestisci tutte le operazioni dal Computer, dal Tablet e dallo Smartphone</h4>";
+
+    //     bar.innerHTML = "<div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-3' src='images/p1-num4.svg'><a id='point-4-1' class='a-point'> <img src='images/p1-point.svg'> </a></div>";
+    // }
+
+    // point4.onclick = function(){
+    //     content.innerHTML = "<h1>L'unione tra</h1> <h1>la Tradizione</h1><h1>ed il Digitale</h1><h4 class='mt-5'>Siamo una Banca che ascolta il territorio con uno sguardo verso il Futuro!</h4>";
+
+    //     bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point'> <img src='images/p1-point.svg'> </a><img id='point-4' src='images/p1-num5.svg'></div>";
+    // }
