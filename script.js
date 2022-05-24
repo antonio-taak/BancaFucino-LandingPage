@@ -299,7 +299,6 @@ if(question1.className != "acceso" && question2.className != "acceso" && questio
     question1.className = "acceso";
     question2.className = "spento";
     question3.className = "spento";
-    //answers.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p>"
 }
 question1.onclick = function() {
     if(question1.className != "acceso"){
@@ -309,7 +308,7 @@ question1.onclick = function() {
         question3.className = "spento";
 
         //Devo cambiare l'html visualizzato nella risposta
-        answers.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p>"
+        // answers.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p>"
     }
 }
 
@@ -374,3 +373,15 @@ function point4_click(){
 
     bar.innerHTML = " <div class='d-flex'><a class='a-point' href=''> <img src='images/p1-point.svg'> </a><img src='images/p1-slider.svg'><a id='point-1' class='a-point' href='#' onclick='point1_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-2' class='a-point' href='#' onclick='point2_click(); return false;'> <img src='images/p1-point.svg'> </a><a id='point-3' class='a-point' href='#' onclick='point3_click(); return false;'> <img src='images/p1-point.svg'> </a><img id='point-4' src='images/p1-num5.svg'></div>";
 }
+
+
+var accordion1 = document.getElementById("accordion1");
+
+
+    if(accordion1.ariaExpanded == "false"){
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-apri.svg'>";
+    }
+    if(accordion1.ariaExpanded == "true"){
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-chiudi.svg'>";
+    }
+
