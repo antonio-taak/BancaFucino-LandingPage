@@ -212,6 +212,12 @@ ul {
     width: 480px !important;
     height: 420px !important;
 }
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
 
 .accordion-item{
     background-color: transparent !important;

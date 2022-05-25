@@ -292,6 +292,9 @@ var question1 = document.getElementById("question1");
 var question2 = document.getElementById("question2");
 var question3 = document.getElementById("question3");
 var question4 = document.getElementById("question4");
+var answers1 = document.getElementById("p3-accordion");
+var answers2 = document.getElementById("answers2");
+var answers3 = document.getElementById("answers3");
 
 var answers = document.getElementById("answers");
 
@@ -307,6 +310,9 @@ question1.onclick = function() {
         question2.className = "spento";
         question3.className = "spento";
 
+        answers1.className = "accordion show";
+        answers2.className = "hide";
+        answers3.className = "hide";
         //Devo cambiare l'html visualizzato nella risposta
         // answers.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, natus placeat. Debitis dolor quas nostrum mollitia.</p>"
     }
@@ -319,8 +325,11 @@ question2.onclick = function() {
         question1.className = "spento";
         question3.className = "spento";
 
+        answers1.className = "accordion hide";
+        answers2.className = "show";
+        answers3.className = "hide";
         //Devo cambiare l'html visualizzato nella risposta
-        answers.innerHTML = "<h3>Chiamaci per assistenza Home Banking</h3><ul><li>dalle ore 8.00 alle ore 22.00 dal lunedì al venerdì</li><li>dalle ore 8.00 alle ore 14.00 il sabato</li></ul><ul><li>numero verde 800.955.540 per chiamate da telefono fisso</li><li>+39 0521 19 22 211 per chiamate da cellulare e dall'estero</li></ul>"
+        //answers.innerHTML = "<h3>Chiamaci per assistenza Home Banking</h3><ul><li>dalle ore 8.00 alle ore 22.00 dal lunedì al venerdì</li><li>dalle ore 8.00 alle ore 14.00 il sabato</li></ul><ul><li>numero verde 800.955.540 per chiamate da telefono fisso</li><li>+39 0521 19 22 211 per chiamate da cellulare e dall'estero</li></ul>"
     }
 }
 
@@ -330,8 +339,12 @@ question3.onclick = function() {
 
         question1.className = "spento";
         question2.className = "spento";
+
+        answers1.className = "accordion hide";
+        answers2.className = "hide";
+        answers3.className = "show";
         //Devo cambiare l'html visualizzato nella risposta
-        answers.innerHTML = "<form> <div class='mb-3 col-auto'> <label for='name' class='form-label'>Nome e Cognome</label> <input type='text' class='form-control' id='name'> </div> <div class='mb-3 col-auto'> <label for='email' class='form-label'>Email</label> <input type='email' class='form-control' id='email' aria-describedby='emailHelp'></div><div class='mb-3 col-auto'><label for='message' class='form-label'>Messaggio</label><textarea type='text' class='form-control' id='message' rows='5'></textarea></div><div class='mb-3 form-check col-auto'><input type='checkbox' class='form-check-input' id='exampleCheck1'><label class='form-check-label' for='check'>Confermo la presa visione dell'Informativa fornita ai sensi degli articoli 13 e 14 del Regolamento UE 2016/679</label></div><div class='d-flex justify-content-end'><button type='submit' class='submit mt-3'>Invia</button></div></form>"
+        //answers.innerHTML = "<form> <div class='mb-3 col-auto'> <label for='name' class='form-label'>Nome e Cognome</label> <input type='text' class='form-control' id='name'> </div> <div class='mb-3 col-auto'> <label for='email' class='form-label'>Email</label> <input type='email' class='form-control' id='email' aria-describedby='emailHelp'></div><div class='mb-3 col-auto'><label for='message' class='form-label'>Messaggio</label><textarea type='text' class='form-control' id='message' rows='5'></textarea></div><div class='mb-3 form-check col-auto'><input type='checkbox' class='form-check-input' id='exampleCheck1'><label class='form-check-label' for='check'>Confermo la presa visione dell'Informativa fornita ai sensi degli articoli 13 e 14 del Regolamento UE 2016/679</label></div><div class='d-flex justify-content-end'><button type='submit' class='submit mt-3'>Invia</button></div></form>"
     }
 }
 
@@ -375,13 +388,83 @@ function point4_click(){
 }
 
 
+
+
+//  ---------- PAGE 3 ACCORDION ----------
 var accordion1 = document.getElementById("accordion1");
+var accordion2 = document.getElementById("accordion2");
+var accordion3 = document.getElementById("accordion3");
+var accordion4 = document.getElementById("accordion4");
+var accordion5 = document.getElementById("accordion5");
 
-
+accordion1.onclick = function() {
     if(accordion1.ariaExpanded == "false"){
-        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-apri.svg'>";
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-apri.svg'>"
     }
     if(accordion1.ariaExpanded == "true"){
-        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-chiudi.svg'>";
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-chiudi.svg'>"
+        
+        accordion2.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion3.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion4.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion5.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+
     }
+}
+accordion2.onclick = function() {
+    if(accordion2.ariaExpanded == "false"){
+        accordion2.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+    }
+    if(accordion2.ariaExpanded == "true"){
+        accordion2.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-chiudi.svg'></img>"
+        
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-apri.svg'>"
+        accordion3.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion4.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion5.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+
+    }
+}
+accordion3.onclick = function() {
+    if(accordion3.ariaExpanded == "false"){
+        accordion3.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+    }
+    if(accordion3.ariaExpanded == "true"){
+        accordion3.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-chiudi.svg'></img>"
+    
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-apri.svg'>"
+        accordion2.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion4.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion5.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+
+    }
+}
+accordion4.onclick = function() {
+    if(accordion4.ariaExpanded == "false"){
+        accordion4.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+    }
+    if(accordion4.ariaExpanded == "true"){
+        accordion4.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-chiudi.svg'></img>"
+        
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-apri.svg'>"
+        accordion2.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion3.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion5.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+    }
+}
+accordion5.onclick = function() {
+    if(accordion5.ariaExpanded == "false"){
+        accordion5.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+    }
+    if(accordion5.ariaExpanded == "true"){
+        accordion5.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-chiudi.svg'></img>"
+        
+        accordion1.innerHTML = "<p class='pe-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p><img class='accordion-arrow' src='images/p3-apri.svg'>"
+        accordion2.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion3.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+        accordion4.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing?</p><img class='accordion-arrow' src='images/p3-apri.svg'></img>"
+    }
+}
+
+
 
