@@ -34,7 +34,7 @@
                       <nav class="navbar navbar-light">
                           <div class="container-fluid">
                             <a class="navbar-brand" href="#">
-                              <img src="/images/logo-white.svg" alt="" class="d-inline-block align-text-top">
+                              <img src="/images/logo-white.svg" alt="" class="d-inline-block align-text-top img-fluid">
                             </a>
                           </div>
                       </nav>
@@ -66,8 +66,8 @@
                   <!-- CAMBIO QUESTA BARRA -->
                   <div id="p1-bar" class="col-md-7">
                     <div class="d-flex">
-                      <img src="images/p1-num1.svg">
-                      <img src="images/p1-slider.svg">
+                      <img id="p1-num" class="mt-2" src="images/p1-num1.svg">
+                      <img id="p1-slider" src="images/p1-slider.svg">
                       <a id="point-1" class="a-point" href="#" onclick="point1_click(); return false;"> <img src="images/p1-point.svg"> </a>
                       <a id="point-2" class="a-point" href="#" onclick="point2_click(); return false;"> <img src="images/p1-point.svg"> </a>
                       <a id="point-3" class="a-point" href="#" onclick="point3_click(); return false;"> <img src="images/p1-point.svg"> </a>
@@ -77,11 +77,12 @@
                   </div>
               </div>
 
-              <div class="scorrimento d-flex flex-row justify-content-end mt-5">
+
+              <!-- <div class="scorrimento d-flex flex-row justify-content-end mt-5">
                 <a href=""> <img src="/images/freccia-sx-white.svg"> </a>
                 <p>Scorri</p>
                 <a href="#section2"> <img src="/images/freccia-dx-white.svg"> </a>
-              </div>
+              </div> -->
 
               </div>
 
@@ -116,10 +117,10 @@
           <!-- Navbar logo -->
           <div class="col-sm-10 p2 align-items-center flex-column">
             <a name="pagina2"></a>
-            <nav class="navbar navbar-light">
+            <nav class="navbar navbar-light p2-nav">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                  <img src="/images/logo.svg" alt="" class="d-inline-block align-text-top">
+                  <img src="/images/logo.svg" alt="" class="d-inline-block align-text-top img-fluid">
                 </a>
               </div>
           </nav>
@@ -129,7 +130,8 @@
 
             <div class="d-flex justify-content-center vw-100 mb-5 pb-5">
             <div class="p2-fade col-sm-4 d-flex flex-column justify-content-center align-items-center">
-              <div class="p2-description d-flex flex-row ms-5">
+
+              <div class="p2-description d-flex ms-5">
                 <h1 class="titolo col-sm-1 me-3">0</h1>
                 <h1 id="p2-partnum" class="titolo me-5">1</h1>
                 <h3 id="p2-title" class="pt1 ms-5 pt-4 fade-in">Conto Corrente</h3>
@@ -153,7 +155,7 @@
             </div>
             </div>
             
-              <div class="col-sm-4 offset-sm-3 d-flex vw-100">
+              <div class="p2-apri col-sm-4 offset-sm-3 d-flex vw-100">
                   <button class="scopri-blue" data-bs-toggle="modal" data-bs-target="#modal">Apri il tuo conto</button>
               </div>
         
@@ -196,7 +198,7 @@
               <nav class="navbar navbar-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
-                    <img src="/images/logo-white.svg" alt="" class="d-inline-block align-text-top">
+                    <img src="/images/logo-white.svg" alt="" class="d-inline-block align-text-top img-fluid">
                   </a>
                 </div>
             </nav>
@@ -356,7 +358,7 @@
               </div>
               </div>
 
-              <div class="col-sm-4 offset-sm-3 vw-100 mb-5 pb-5">
+              <div class="col-sm-3 offset-sm-3 vw-100 mb-5 pb-5">
                 <button class="scopri-white" data-bs-toggle="modal" data-bs-target="#modal">Apri il tuo conto</button>
             </div>
 
@@ -400,7 +402,7 @@
             <nav class="navbar navbar-light">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                  <img src="/images/logo.svg" alt="" class="d-inline-block align-text-top">
+                  <img src="/images/logo.svg" alt="" class="d-inline-block align-text-top img-fluid">
                 </a>
               </div>
           </nav>
@@ -408,12 +410,12 @@
           <!-- CONTENT -->
           <div class="main p4 d-flex align-items-center">
 
-            <div class="col-sm-3">
+            <div class="p4-col col-sm-3">
               <div class="p4-titolo mb-5 pb-5">
                 <h1>Scarica i documenti</h1>
               </div>
 
-              <div class="col-sm-4 vw-100 mt-5 pt-5">
+              <div class="p4-apri mt-5 pt-5">
                 <button class="scopri-blue" data-bs-toggle="modal" data-bs-target="#modal">Apri il tuo conto</button>
             </div>
             </div>
@@ -425,7 +427,7 @@
                 <div class="row">
 
                   <!-- ITEM 1 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -435,7 +437,7 @@
                   </div>
             
                   <!-- ITEM 2 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Informativa</p>
@@ -445,7 +447,7 @@
                   </div>
             
                   <!-- ITEM 3 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Foglio informativo Conto lu'</p>
@@ -455,7 +457,7 @@
                   </div>
             
                   <!-- ITEM 4 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Foglio informativo Time</p>
@@ -465,7 +467,7 @@
                   </div>
             
                   <!-- ITEM 5 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -475,7 +477,7 @@
                   </div>
 
                   <!-- ITEM 6 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -485,7 +487,7 @@
                   </div>
 
                   <!-- ITEM 7 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -495,7 +497,7 @@
                   </div>
 
                   <!-- ITEM 8 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -513,7 +515,7 @@
                 <div class="row">
 
                   <!-- ITEM 1 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -523,7 +525,7 @@
                   </div>
             
                   <!-- ITEM 2 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Informativa</p>
@@ -533,7 +535,7 @@
                   </div>
             
                   <!-- ITEM 3 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Foglio informativo Conto lu'</p>
@@ -543,7 +545,7 @@
                   </div>
             
                   <!-- ITEM 4 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Foglio informativo Time</p>
@@ -553,7 +555,7 @@
                   </div>
             
                   <!-- ITEM 5 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -563,7 +565,7 @@
                   </div>
 
                   <!-- ITEM 6 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -573,7 +575,7 @@
                   </div>
 
                   <!-- ITEM 7 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -583,7 +585,7 @@
                   </div>
 
                   <!-- ITEM 8 -->
-                  <div class="col-md-3 d-flex justify-content-center align-items-center mb-4">
+                  <div class="item col-md-3 d-flex justify-content-center align-items-center mb-4">
                     <img src="/images/Icona Documento.svg">
                     <div class="nome-doc d-flex flex-column mt-2 me-4 ms-2">
                       <p>Fascicolo contrattuale</p>
@@ -636,7 +638,7 @@
                 <nav class="navbar navbar-light">
                   <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                      <img src="/images/logo-white.svg" alt="" class="d-inline-block align-text-top">
+                      <img src="/images/logo-white.svg" alt="" class="d-inline-block align-text-top img-fluid">
                     </a>
                   </div>
               </nav>

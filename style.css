@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body{
-    /* overflow-y: hidden; */
-    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif !important;
     /* background: url("/images/background.png"); */
 }
+
 body::-webkit-scrollbar {
     display: none;
   }
 
+/* SMARRTPHONE */
+@media (min-width: 576px) { 
+
+ }
+
+/* TABLET */
+@media (min-width: 768px) {
+
+ }
+
+
+
+
+
 ul {
     list-style-image: url('images/tick.svg');
 }
+
 .scroll{
     height: 100vh;
     scroll-snap-type: y mandatory;
@@ -26,7 +44,12 @@ ul {
 }
 
 .p1-bg{
-    background-image: url(/images/bg-p1.png);
+    background: url(/images/bg-p1.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-image: url(/images/bg-p1.png); */
 }
 
 .sidebar{
@@ -52,7 +75,7 @@ ul {
     height: 600px;
 }
 .main-description h1{
-    width: 7000px !important;
+    width: 700px !important;
     letter-spacing: 0px;
     font-size: 72px;
     word-break:keep-all;
@@ -95,10 +118,14 @@ ul {
     margin-left: 200px;
 }
 .a-point{
-    margin-top: 18px;
+    margin-top: 22px;
 }
 .p2-bg{
-    background-image: url(/images/bg-p2.png);
+    background: url(/images/bg-p2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .p2{
     color: #003366;
@@ -180,22 +207,21 @@ ul {
     height: 400px !important;
 }
 
-/* #img_p2{
-    transition: all 1s;
-    width: 100px;
-    height: 100px;
-} */
-
 #p2-partnum{
     width: 35px !important;
     height: 115px !important;
+    margin-left: 10px;
 }
 #p2-title{
-    width: 225px !important;
+    width: 300px !important;
     height: 115px !important;
 }
 .p3-bg{
-    background-image: url(/images/bg-p1.png);
+    background: url(/images/bg-p1.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #questions{
     width: 480px !important;
@@ -312,7 +338,9 @@ ul {
     background-color: transparent;
     box-shadow: none;
 }
-
+.p3 .col-sm-3{
+    margin-top: -95px;
+}
 .form-check-input{
     border: 2px solid #ffffff !important;
     background-color: transparent;
@@ -333,7 +361,11 @@ ul {
 
 
 .p4-bg{
-    background-image: url(/images/bg-p4.png);
+    background: url(/images/bg-p4.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .p4{
@@ -373,7 +405,7 @@ ul {
   
   .nome-doc p{
     margin-bottom: 0px;
-    font-size: 90%;
+    font-size: 85%;
     color: #707070;
   }
   .nome-doc a{
@@ -381,10 +413,20 @@ ul {
     font-size: 90%;
     color: #003366;
   }
+.p4-apri{
+    margin-bottom: 100px;
+}
+.p4-titolo{
+    margin-top: 290px;
+}
 
 
 .p5-bg{
-    background-image: url(/images/bg-p5.png);
+    background: url(/images/bg-p5.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .p5 .titolo{
     font-size: 350%;
@@ -508,8 +550,10 @@ ul {
   }
 
   #sec-sm-2{
+      color: #ffffff;
       height: 100%;
-      background-color: #602C78;
+      background-image: url(/images/bg-sec-sm-2.png);
+      background-size: contain;
   }
   #sec-sm-2 .titolo{
       text-align: start;
@@ -584,3 +628,220 @@ ul {
     white-space: normal;
 } 
 
+
+
+
+
+ /* NOTEBOOK */
+ @media (max-width: 1440px) { 
+    .navbar{
+        height: 50px;
+    }
+    .navbar-brand{
+        height: 50px;
+        width: 200px; 
+    }
+    .main-description{
+        height: 450px;
+    }
+    .main-description h1{
+        font-size: 48px;
+    }
+    .main-description h4{
+        font-size: 20px;
+    }
+    .main-description li{
+        font-size: 100%;
+    }
+    .scopri-white{
+        height: 65px;
+        width: 180px;
+    }
+    #p1-slider{
+        width: 750px;
+    }
+    .a-point{
+        margin-top: 14px;
+    }
+    #p1-num{
+        height: 42px;
+        width: 42px;
+    }
+    #point-1{
+        margin-left: -600px;
+        height: 42px;
+        width: 42px;
+    }
+    #point-2{
+        margin-left: 180px;
+        height: 42px;
+        width: 42px;
+    }
+    #point-3{
+        margin-left: 180px;
+        height: 42px;
+        width: 42px;
+    }
+    #point-4{
+        margin-left: 180px;
+        height: 42px;
+        width: 42px;
+    }
+    #point-4-1{
+        margin-left: 150px;
+        height: 42px;
+        width: 42px;
+    }
+    .p2-nav{
+        height: 100px;
+    }
+    .p2-fade{
+        margin-top: 50px;
+    }
+    .p2-scroll{
+        height: 220px;
+        margin-top: 50px;
+    }
+    .p2-description{
+        margin-left: 200px !important;
+    }
+    #p2-up img{
+        height: 48px;
+        width: 48px;
+    }
+    #p2-down img{
+        height: 48px;
+        width: 48px;
+    }
+    #p2-img{
+        width: 300px;
+        height: 300px;
+    }
+    .scopri-blue{
+        height: 65px;
+        width: 180px;
+    }
+    .p2 .col-sm-4{
+        margin-top: -80px !important;
+    }
+    .container-titolo h1{
+        font-size: 48px ;
+    }
+    .container-titolo h4{
+        font-size: 18px;
+    }
+    .box-faq{
+        margin-top: 0px !important;
+    }
+    #question1 h3{
+        font-size: 22px;
+    }
+    #question1 img{
+        height: 38px;
+        width: 38px;
+    }
+    #question2 h3{
+        font-size: 22px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    #question2 img{
+        height: 38px;
+        width: 38px;
+    }
+    #question3 h3{
+        font-size: 22px;
+    }
+    #question3 img{
+        height: 38px;
+        width: 38px;
+    }
+    #questions a{
+        width: 290px;
+    }
+    #accordion1 p{
+        font-size: 80%;
+    }
+    #accordion2 p{
+        font-size: 80%;
+    }
+    #accordion3 p{
+        font-size: 80%;
+    }
+    #accordion4 p{
+        font-size: 80%;
+    }
+    #accordion5 p{
+        font-size: 80%;
+    }
+
+    .accordion-arrow{
+        height: 22px;
+        width: 22px;
+    }
+    .accordion-body{
+        font-size: 80%;
+    }
+   
+    #questions{
+        width: 480px;
+        height: 350px !important;
+    }
+    #answers{
+        width: 480px;
+        height: 350px !important;
+    }
+    .p3 .col-sm-3{
+        margin-top: -110px !important;
+    }
+    .item p{
+        font-size: 55%;
+    }
+    .item a{
+        font-size: 70%;
+    }
+    .item img{
+        height: 48px;
+        width: 48px;
+    }
+    .p4-col{
+        width: 20%;
+    }
+    .p4-apri{
+        margin-bottom: 130px;
+    }
+    .p4-titolo{
+        margin-top: 280px;
+    }
+    .riga2{
+        margin-top: 2rem;
+    }
+    
+    .modal-description-light{
+        margin-top: 60px;
+        width: 450px;
+        height: 450px;
+        border: 1px solid #003366;
+        padding: 100px 130px 100px 70px;
+        text-align: start;
+    }
+    .modal-description-blue{
+        margin-top: 60px;
+        width: 450px;
+        height: 450px;
+        border: 1px solid #ffffff;
+        padding: 100px 130px 100px 70px;
+        text-align: start;
+    }
+    .img1{
+        margin-bottom: 30px;
+    }
+    .img2{
+        margin-bottom: 30px;
+    }
+    .img3{
+        margin-bottom: 30px;
+    }
+
+    
+ }
